@@ -1,5 +1,5 @@
 setwd("/home/bianca/R/exploratory-data-analysis/ExData_Plotting1")
 #source("readfile.R")
-png("plot1.png", width=480, height=480)
+png("plot1.png", width=600, height=600)
 hist(subset$Global_active_power, col="red", main="Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
