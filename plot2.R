@@ -1,5 +1,6 @@
 setwd("/home/bianca/R/exploratory-data-analysis/ExData_Plotting1")
-#source("readfile.R")
+source("readfile.R")
+source("convert_columns.R")
 png("plot2.png", width=600, height=600)
 plot(datetime, subset$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

@@ -1,0 +1,7 @@
+subset[, "Global_active_power"] <- as.numeric(subset$Global_active_power)
+subset[, "Global_reactive_power"] <- as.numeric(subset$Global_reactive_power)
+subset[, "Sub_metering_1"] <- as.numeric(subset$Sub_metering_1)
+subset[, "Sub_metering_2"] <- as.numeric(subset$Sub_metering_2)
+subset[, "Sub_metering_3"] <- as.numeric(subset$Sub_metering_3)
+subset[, "Voltage"] <- as.numeric(subset$Voltage)
+datetime <- strptime(paste(subset$Date, subset$Time, sep=" "), "%Y-%m-%d %H:%M:%S")
