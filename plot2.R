@@ -1,0 +1,6 @@
+setwd("/home/bianca/R/exploratory-data-analysis/ExData_Plotting1")
+#source("readfile.R")
+png("plot2.png", width=480, height=480)
+datetime <- strptime(paste(subset$Date, subset$Time, sep=" "), "%Y-%m-%d %H:%M:%S")
+plot(datetime, subset$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()
